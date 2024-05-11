@@ -1,0 +1,28 @@
+li {
+  cursor: pointer;
+  position: relative;
+}
+
+li::after {
+  width: 0%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  background: #000;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+
+li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.btns {
+  transition: 0.3s ease-in-out;
+}
+
+.btns:hover {
+  scale: 1.1;
+}
